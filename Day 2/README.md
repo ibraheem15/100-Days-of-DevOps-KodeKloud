@@ -71,6 +71,49 @@ But this has limitations:
 - If sudo requires a password, it will fail because there’s no way to enter the password.
 - To avoid this, you can configure passwordless sudo for specific commands, but be cautious as it can pose security risks or use SSH keys with proper permissions.
 
+### Alternatively 
+
+**sudo -A** can be used to provide password via a helper program.
+
+You can do this in the following way:
+
+1. Create a password file (secure its permissions!)
+```bash
+echo "your_sudo_password" > ~/.sudo_pass
+chmod 600 ~/.sudo_pass
+```
+
+2. Create a helper script (e.g., /usr/local/bin/sudo_askpass.sh)
+```bash
+#!/bin/bash
+cat ~/.sudo_pass
+```
+Make it executable:
+```bash
+chmod +x /usr/local/bin/sudo_askpass.sh
+```
+
+3. Set the environment variable
+```bash
+export SUDO_ASKPASS=/usr/local/bin/sudo_askpass.sh
+```
+4. Now you can run the combined command
+```bash
+ssh user@hostname "sudo -A useradd -e 2024-12-31 tempuser"
+```
+
+*Warning: This method is not secure for production. Anyone who can read your password file or modify your script can gain root access*.
+
+### We can fix this by replacing the contents of askpass.sh with
+```bash
+#!/bin/bash
+echo -n "Password: " >&2
+read -rs password
+echo "$password"
+```
+
+This way it will prompt for password when executed without invoking the shell (non-interactive mode). And you can also delete the password file.
+
 <!-- In terms of automation we will look answers for the frequency of running this task on day to day basis? Do we need to automate this? Does automation efforts are justified? How to automate it -->
 
 ## Automation Ideas for Temporary User Setup

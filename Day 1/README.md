@@ -65,12 +65,12 @@ This command runs the specified script as `newuser`, utilizing the non-interacti
   - Script Execution: Run scripts in isolated environments.
   - Cleanup: Ensure no residual users remain after tasks are completed.
 
-  
+All of these use cases can be solved by creating a user with expiry date (done in day 2).
 
 ### 2. Scheduled Maintenance Tasks
 
   Use non-interactive shell user to run scheduled maintenance tasks, such as backups or system updates, without requiring user intervention.
 
-  **Use casess**:
+  **Use cases**:
   - Only allow specific users to run maintenance tasks.
   - Prevent interactive logins for security.
