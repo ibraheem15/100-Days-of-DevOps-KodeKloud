@@ -7,6 +7,9 @@ https://ss64.com/bash/chmod.html
 
 for example; chmod a+x /path/to/your/script.sh = chmod 755 /path/to/your/script.sh
 
+### Only Execution Permission
+Giving only execution permission without read permission will not work because the system needs to read the file to execute it. Therefore, at least read permission is required along with execution permission. However, binary file needs only execution permission.
+
 ## Use Cases:
 - **Least Privilege Principle**: By disabling files and directories from being executed by unauthorized users, you minimize the risk of accidental or malicious execution of scripts that could compromise system security.
 - **Preventing Accidental Execution**: Restricting execution permissions can prevent users from accidentally running scripts that they do not fully understand, which could lead to unintended consequences.
