@@ -25,4 +25,6 @@ Create a script that takes a list of server IPs or hostnames and automates the p
 Develop a script that periodically generates a new SSH key pair and updates the public key on all remote servers.
 ### 3. Centralized Management
 Implement a centralized system to manage SSH keys and distribute public keys to authorized servers.
+### 4. Certificate-Based Authentication
+Set up a system that uses SSH certificates for authentication, allowing for easier key management and revocation. These certificates can be expired after a certain period, enhancing security.
 
