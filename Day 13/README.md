@@ -1,0 +1,5 @@
+# 
+## 
+
+## Automation Ideas
+### 1. 
