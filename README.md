@@ -94,7 +94,7 @@ Use `notes/` when the lesson becomes bigger than one day. Use `projects/` when s
 - [x] **Day 19** - Restore multiple websites under Apache paths
 - [x] **Day 20** - Configure Nginx with PHP-FPM over a Unix socket
 
-### Domain 3: Git and Release Operations (Days 21-31)
+### Domain 3: Git and Release Operations (Days 21-32)
 
 - [x] **Day 21** - Install Git and create a bare repository
 - [x] **Day 22** - Clone a repository from local server storage
@@ -107,23 +107,23 @@ Use `notes/` when the lesson becomes bigger than one day. Use `projects/` when s
 - [ ] **Day 29** - Reserved for the next KodeKloud Git task
 - [x] **Day 30** - Reset Git history to a target commit
 - [x] **Day 31** - Restore a selected Git stash
+- [x] **Day 32** - Rebase feature branch with master without a merge commit
 
-Progress: 29 / 31 recorded days complete
+Progress: 30 / 32 recorded days complete
 
 ## Planned roadmap for future KodeKloud DevOps tasks
 
 These are the intended domains for the next tasks. The exact day titles should come from the live KodeKloud task when possible.
 
-### Domain 4: Containers and Docker (Days 32-40)
+### Domain 4: Containers and Docker (Days 33-40)
 
-- [ ] **Day 32** - Install Docker and validate the daemon
-- [ ] **Day 33** - Run and inspect containers
-- [ ] **Day 34** - Build an image from a Dockerfile
-- [ ] **Day 35** - Manage volumes and bind mounts
-- [ ] **Day 36** - Configure container networking
-- [ ] **Day 37** - Push and pull images from a registry
-- [ ] **Day 38** - Troubleshoot a broken containerized service
-- [ ] **Day 39** - Compose a multi-service stack
+- [ ] **Day 33** - Install Docker and validate the daemon
+- [ ] **Day 34** - Run and inspect containers
+- [ ] **Day 35** - Build an image from a Dockerfile
+- [ ] **Day 36** - Manage volumes and bind mounts
+- [ ] **Day 37** - Configure container networking
+- [ ] **Day 38** - Push and pull images from a registry
+- [ ] **Day 39** - Troubleshoot a broken containerized service
 - [ ] **Day 40** - Containerize and run a web application
 
 ### Domain 5: Jenkins and CI/CD (Days 41-48)
